@@ -1,0 +1,79 @@
+body {
+  background-color: #ebebd3;
+}
+
+table i {
+  color: white;
+}
+
+.btnVisit {
+  background-color: #9eb23b;
+  color: white;
+}
+.btnVisit-check:checked + .btnVisit,
+.btnVisit.active,
+.btnVisit.show,
+.btnVisit:first-child:active {
+  background-color: #9eb23b;
+  color: white;
+}
+
+.btnVisit:hover {
+  background-color: #8c9e34;
+  color: white;
+}
+.btnDelete {
+  background-color: #eb1d36;
+  color: white;
+}
+.btnDelete:hover {
+  background-color: #ce192e;
+  color: white;
+}
+.btnDelete-check:checked + .btnDelete,
+.btnDelete.active,
+.btnDelete.show,
+.btnDelete:first-child:active {
+  background-color: #eb1d36;
+  color: white;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.boxContent {
+  margin-top: 15rem;
+}
+dialog {
+  border: none;
+  border-radius: 0.3125rem;
+}
+
+dialog p {
+  font-family: "Bree Serif", serif;
+  font-size: 1.3125rem;
+}
+
+dialog p span {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 1.125rem;
+}
+
+dialog p span i {
+  color: #bb4120;
+}
+
+dialog .mainIcon {
+  color: #bb4120;
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.btn-error {
+  border: 1px solid black;
+  border-radius: 0.3125rem;
+}
+
+div h1 {
+  font-family: "Bree Serif", serif;
+}

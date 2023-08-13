@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption&display=swap"
+        rel="stylesheet">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="./images/4935865.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+
+</head>
+
+<body>
+    <div class="position-relative pb-5">
+        <section class="container">
+            <div class="w-75 text-center m-auto">
+                <img src="./images/Free-Social-Bookmarking-Sites-List-2022.jpg" alt="" class="w-50">
+            </div>
+            <div class="w-75 m-auto">
+                <div class="mb-3">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    <label for="siteName" class="form-label">Site Name</label>
+                    <input type="text" placeholder="Bookmark Name" class="form-control" id="siteName">
+                </div>
+                <div class="mb-3">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    <label for="siteUrl" class="form-label">Site URL</label>
+                    <input type="text" placeholder="Website URL" class="form-control" id="siteUrl">
+                </div>
+                <div class="text-center mb-3">
+                    <button class="btn btn-danger px-5" id="btnSubmit">Submit</button>
+                </div>
+            </div>
+            <table class="table table-bordered table-hover text-center w-100 m-auto">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="list">
+                </tbody>
+            </table>
+            <div class="layer d-none position-absolute top-0 start-0 w-100 bottom-0" id="error">
+                <div class="boxContent">
+                    <dialog open class="dialog d-none">
+                        <i
+                            class="fa-solid fa-circle-exclamation d-flex justify-content-center align-items-center mainIcon"></i>
+                        <p>Site Name or Url is not valid, Please follow the rules below :
+                            <br>
+                            <br>
+                            <span>
+                                <i class="fa-regular fa-circle-right p-2"></i>
+                                Site name must contain at least 3 characters.
+                                <br>
+                                <i class="fa-regular fa-circle-right p-2"></i>
+                                Site URL must be a valid one
+                            </span>
+                        </p>
+                        <form method="dialog" class="text-center">
+                            <button class="btn-error" id="btnError">OK</button>
+                        </form>
+                    </dialog>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
