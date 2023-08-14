@@ -25,9 +25,8 @@ function validationOnSubmit() {
         clearValues();
     }
     else {
-        errorInput.classList.replace("d-none", "d-block")
-        dialog.classList.replace("d-none", "d-block")
-
+        errorInput.classList.replace("d-none", "d-block");
+        dialog.classList.replace("d-none", "d-block");
     }
 }
 

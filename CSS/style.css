@@ -1,7 +1,10 @@
 body {
   background-color: #ebebd3;
 }
-
+.image {
+  width: 50%;
+  margin: auto;
+}
 table i {
   color: white;
 }
