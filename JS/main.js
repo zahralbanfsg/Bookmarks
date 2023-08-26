@@ -23,6 +23,8 @@ function validationOnSubmit() {
         setProductsInLocalStorage(bookmarks);
         displayBookmark(bookmarks);
         clearValues();
+        siteUrl.classList.remove("is-valid");
+        siteName.classList.remove("is-valid");
     }
     else {
         errorInput.classList.replace("d-none", "d-block");
@@ -102,6 +104,7 @@ function checkDataRepeated() {
     for (let i = 0; i < bookmarks.length; i++) {
         if (siteName.value == bookmarks[i].name || siteUrl.value == bookmarks[i].url) {
             checkSiteValues = false;
+            console.log(checkSiteValues)
             break
         }
     }
